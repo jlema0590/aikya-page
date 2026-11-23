@@ -1,0 +1,16 @@
+{
+  "name": "aikya-page",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The public Aikya ecosystem portal",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test:links": "node --test tests/build.test.mjs",
+    "test": "npm run build && npm run test:links && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}
