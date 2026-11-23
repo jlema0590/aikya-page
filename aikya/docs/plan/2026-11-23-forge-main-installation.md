@@ -14,6 +14,6 @@ contributor snippet still clones develop; the user explicitly requested main.
   behind a clear pending-publication disclosure, with no copy action for that path.
 - [x] Keep source fallback, correct links/labels and translate all surrounding copy.
 - [x] Run the full suite and review desktop/mobile guide screenshots.
-- [ ] Update 0.1.3 docs/changelog, publish and verify deployed HTML and interactions.
+- [x] Update 0.1.3 docs/changelog, publish and verify deployed HTML and interactions.
 
 No Forge release is created and no installation is performed by this portal change.

@@ -54,4 +54,18 @@ Safari/Firefox or successful execution of the documented installers.
 
 ## Publication
 
-Pending the portal Pages check and deployment.
+Portal check and Pages deployment completed successfully for source commit
+`3d4c048a5081a385551711c483ce71491540f929`:
+https://github.com/jlema0590/aikya-page/actions/runs/45229316571
+
+All twelve public HTML pages returned HTTP 200 and matched the generated artifact
+byte-for-byte, as did the changed installation stylesheet. Public Chromium tests
+confirmed exact main checkout text in the clipboard, main documentation links,
+and the pending native disclosure without copy controls in English and Spanish.
+No page errors were observed.
+
+Published guide:
+https://jlema0590.github.io/aikya-page/es/guides/get-started/#install-forge
+
+This docs-only follow-up does not modify deployed files or trigger another build.
+Forge itself remains unpublished; the portal deployment does not change that status.
