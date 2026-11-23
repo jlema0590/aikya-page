@@ -62,4 +62,18 @@ when observed.
 
 ## Publication
 
-Pending the Pages check and deploy workflow.
+Pages check and deploy both completed successfully for source commit
+`e519d156d80453d0489bb7e998106200884b19c6`:
+https://github.com/jlema0590/aikya-page/actions/runs/45225245040
+
+All twelve public HTML pages returned HTTP 200 and matched the local generated
+artifact byte-for-byte. The published app module, mark SVG and changed stylesheets
+also matched. Public Chromium checks passed for the single language toggle,
+Enter-key navigation, actual clipboard text and Windows instruction selection.
+No page errors were observed.
+
+Published site: https://jlema0590.github.io/aikya-page/es/
+Installation guide: https://jlema0590.github.io/aikya-page/es/guides/get-started/
+
+This validation-only follow-up changes no deployed files and does not request a
+second Pages build.

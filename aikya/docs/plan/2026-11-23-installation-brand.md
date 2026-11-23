@@ -21,7 +21,7 @@ Outfit typography and desktop/mobile structure remain the visual foundation.
 - [x] Extract the standalone mark from the original Aikya image, save the transparent
   asset under `assets/images/`, and use it consistently in header/footer/hero/favicon.
   Replace elliptical SVG orbital guides with circles; retain pausable/reduced motion.
-- [ ] Run the full suite, review desktop/mobile screenshots, update 0.1.2 changelog
+- [x] Run the full suite, review desktop/mobile screenshots, update 0.1.2 changelog
   and README, publish through existing Pages checks and verify the public artifact.
 
 ## Review focus
