@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3 — 2026-11-23
+
+- Correct Forge source installation to clone main on macOS/Linux and Windows.
+- Link the native installer and source quick start explicitly to Forge main.
+- Document main’s native one-command path as publication pending, without a copy
+  action while both public URLs and the latest stable release remain unavailable.
+- Preserve a usable source fallback and validate exact copied commands in both languages.
+
 ## 0.1.2 — 2026-11-23
 
 - Replace separate EN/ES links with one accessible, button-like language toggle.

@@ -81,7 +81,7 @@ test("Forge guidance does not offer an unavailable public download", async ({
     page.getByRole("link", { name: "Source quick start" }),
   ).toHaveAttribute(
     "href",
-    "https://github.com/jlema0590/aikya-forge#quick-start-from-source",
+    "https://github.com/jlema0590/aikya-forge/tree/main#quick-start-from-source",
   );
 });
 

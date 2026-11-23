@@ -128,3 +128,12 @@ Object.assign(spanish, {
   'Replace the target with your project path. Provider credentials and a positive local execution budget are configured separately in Settings.': 'Sustituye el destino por la ruta de tu proyecto. Las credenciales del proveedor y un presupuesto local de ejecución positivo se configuran por separado en Settings.',
 });
 spanish['For an existing project instead'] = 'Si el proyecto ya existe';
+
+Object.assign(spanish, {
+  'Install from main while native publication is pending. Source setup requires Python 3.10–3.13, Node.js 22.19.0+ and Git.': 'Instala desde main mientras la publicación nativa está pendiente. La instalación desde el código fuente requiere Python 3.10–3.13, Node.js 22.19.0+ y Git.',
+  'Publication pending': 'Publicación pendiente',
+  'The native installer in main bundles Python, Node and the Pi terminal. Its short commands require a published stable release and deployed installation Pages. Both public URLs currently return 404; use the main source setup below.': 'El instalador nativo de main incluye Python, Node y la terminal Pi. Sus comandos cortos requieren una versión estable publicada y la página de instalación desplegada. Ambas URL públicas devuelven actualmente 404; utiliza la instalación desde el código fuente de main que aparece a continuación.',
+  'Official native commands (not available yet)': 'Comandos nativos oficiales (aún no disponibles)',
+  'Native installation documentation on main': 'Documentación de instalación nativa en main',
+  'Not available yet': 'Aún no disponible',
+});

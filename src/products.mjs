@@ -52,7 +52,8 @@ export const products = [
     command: "aikya",
     repo: "https://github.com/jlema0590/aikya-forge",
     installation:
-      "https://github.com/jlema0590/aikya-forge#quick-start-from-source",
+      "https://github.com/jlema0590/aikya-forge/tree/main#install-with-one-command",
+    sourceInstallation: "https://github.com/jlema0590/aikya-forge/tree/main#quick-start-from-source",
     release: "https://github.com/jlema0590/aikya-forge/releases",
     requirements:
       "Source setup uses Python 3.10–3.13, Node.js 22.19.0+ and Git. Native distribution targets macOS, Windows and Linux; opening the terminal does not call a model.",

@@ -20,7 +20,7 @@ for (const locale of ['', 'es/']) {
     await expect(mods.locator('details[open] code').first()).toContainText('--version v0.0.10 aikya-flow aikya-usage --scope user');
     const forge = page.locator('[data-install="forge"]');
     await expect(forge.locator('details[open] code').first()).toContainText('python -m pip install --no-build-isolation -e ".[terminal]"');
-    await expect(forge).not.toContainText('github.io/aikya-forge/install');
+    await expect(forge.locator('.install-systems')).not.toContainText('github.io/aikya-forge/install');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 }

@@ -19,3 +19,9 @@
   .install-command pre { padding: 16px; }
   .command-actions { padding-inline: 16px; }
 }
+.pending-native { border: 1px dashed var(--line); border-radius: 10px; padding: 20px; margin: 24px 0; }
+.pending-native h4 { margin: 0 0 10px; color: var(--turquoise); }
+.pending-native p { color: var(--muted); max-width: 72ch; }
+.pending-native summary { cursor: pointer; margin: 16px 0; }
+.pending-native h5 { font-size: .875rem; margin: 18px 0 10px; }
+.pending-native > a { margin-top: 8px; }

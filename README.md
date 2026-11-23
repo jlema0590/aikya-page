@@ -52,14 +52,16 @@ its terminal/phase panels are explicitly illustrative, not actual execution evid
 Content sources checked on 2026-11-23:
 
 - [Harness README](https://github.com/jlema0590/aikya-harness#readme).
-- [Forge README](https://github.com/jlema0590/aikya-forge#readme).
+- [Forge main README](https://github.com/jlema0590/aikya-forge/tree/main#readme).
 - [Mods README](https://github.com/jlema0590/aikya-mods#readme).
 - Public latest stable releases: Harness v7.2.2, Mods v0.0.10; Forge has no stable
   public release at the content check. Main-branch docs can describe newer features.
 
 The installation panels use published Harness Pages scripts and the pinned v0.0.10
 Mods standalone installer (Git required), with Flow/Usage selected and BoxBot optional.
-Forge retains source-only instructions. The website displays and copies these commands;
+Forge source instructions clone `main`, as requested, and link explicitly to that
+branch. Its documented native commands appear in a pending-publication disclosure
+without copy actions while the public scripts and stable release are unavailable. The website displays and copies these commands;
 it never executes installers. Recheck public release availability before updating them.
 
 Both locales share the same verified product data. Add translations for new editorial
@@ -80,7 +82,7 @@ npm test
 Tests cover real generated links/assets, twelve English/Spanish routes, equivalent-page
 language switching, translated product and motion controls, keyboard product selection,
 pause/resume, reduced motion, desktop/mobile layout, no-script access and Forge's
-source-only guidance. CI installs its own matching Chromium. To reuse an existing
+native-publication status and main source fallback. CI installs its own matching Chromium. To reuse an existing
 Chromium locally, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable.
 
 ## GitHub Pages
