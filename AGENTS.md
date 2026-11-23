@@ -2,7 +2,8 @@
 
 - Harness, Forge and Mods are independent products. Do not describe Forge as a
   replacement for Harness or promise unsupported cross-product integrations.
-- Keep public content and engineering documentation in English. Keep product
+- Keep public content available in English and Spanish; engineering documentation
+  stays in English. Keep product
   claims grounded in the linked source repositories and their published releases.
 - Never advertise an unavailable installer, invented usage values or unmeasured
   performance/token savings. Main-branch docs can be newer than stable releases.

@@ -23,6 +23,12 @@ test("the production artifact serves every navigable local page and asset under 
     "products/mods/index.html",
     "guides/comparison/index.html",
     "guides/get-started/index.html",
+    "es/index.html",
+    "es/products/harness/index.html",
+    "es/products/forge/index.html",
+    "es/products/mods/index.html",
+    "es/guides/comparison/index.html",
+    "es/guides/get-started/index.html",
   ]) {
     assert.ok(existsSync(join(site, route)), "Missing public route: " + route);
   }

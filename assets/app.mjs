@@ -1,6 +1,10 @@
 import { previews } from "./previews.mjs";
 
 const root = document.documentElement;
+const locale = root.lang === "es" ? "es" : "en";
+const copy = locale === "es"
+  ? { reduced: "Movimiento reducido activado", resume: "Reanudar animación", pause: "Pausar animación" }
+  : { reduced: "Reduced motion enabled", resume: "Resume animation", pause: "Pause animation" };
 const reduced = matchMedia("(prefers-reduced-motion: reduce)");
 const toggle = document.querySelector("[data-motion-toggle]");
 let userPaused = false;
@@ -12,10 +16,10 @@ function applyMotion() {
   toggle.hidden = false;
   toggle.disabled = reduced.matches;
   const label = reduced.matches
-    ? "Reduced motion enabled"
+    ? copy.reduced
     : paused
-      ? "Resume animation"
-      : "Pause animation";
+      ? copy.resume
+      : copy.pause;
   toggle.setAttribute("aria-label", label);
   toggle.setAttribute("aria-pressed", String(paused));
   toggle.querySelector("[data-motion-label]").textContent = label;
@@ -33,7 +37,7 @@ const buttons = [...document.querySelectorAll("[data-product]")];
 for (const button of buttons) {
   button.addEventListener("click", () => {
     const id = button.dataset.product,
-      preview = previews[id];
+      preview = previews[locale][id];
     if (!preview) return;
     for (const item of buttons)
       item.setAttribute("aria-pressed", String(item === button));

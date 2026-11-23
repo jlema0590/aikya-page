@@ -6,6 +6,7 @@ import {
   comparison,
   gettingStarted,
 } from "../src/templates.mjs";
+import { localize, translate } from "../src/i18n.mjs";
 import { products } from "../src/products.mjs";
 const root = resolve(import.meta.dirname, ".."),
   site = join(root, "site");
@@ -19,6 +20,11 @@ const pages = {
 };
 for (const product of products)
   pages[`products/${product.id}/index.html`] = productPage(product);
+for (const [name, html] of Object.entries({ ...pages })) {
+  const route = name.replace("index.html", "");
+  pages[name] = localize(html, route, "en");
+  pages[`es/${name}`] = localize(html, route, "es");
+}
 for (const [name, html] of Object.entries(pages)) {
   const file = join(site, name);
   await mkdir(resolve(file, ".."), { recursive: true });
@@ -28,9 +34,9 @@ await writeFile(
   join(site, "assets/previews.mjs"),
   "export const previews = " +
     JSON.stringify(
-      Object.fromEntries(
-        products.map((p) => [p.id, { name: p.name, description: p.preview }]),
-      ),
+      Object.fromEntries(["en", "es"].map((locale) => [locale, Object.fromEntries(
+        products.map((p) => [p.id, { name: p.name, description: locale === "es" ? translate(p.preview) : p.preview }]),
+      )])),
       "",
       "  ",
     ) +

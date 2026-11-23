@@ -6,6 +6,13 @@ links their canonical documentation and releases; it does not distribute install
 
 ![Aikya portal preview](aikya/docs/validation/hero.png)
 
+## Languages
+
+The complete portal is available in [English](https://jlema0590.github.io/aikya-page/)
+and [Spanish](https://jlema0590.github.io/aikya-page/es/). The EN/ES selector opens
+the equivalent page, including without JavaScript. Language choice is explicit;
+there are no automatic redirects or external translation services.
+
 ## Local preview
 
 Requires Node.js 22+ for the local build. The deployed website is static and has
@@ -23,6 +30,8 @@ Open http://127.0.0.1:4178/aikya-page/.
 
 - `src/products.mjs`: verified product descriptions, requirements and upstream links.
 - `src/templates.mjs`: landing page, product pages and comparison/getting-started guides.
+- `src/es.mjs`: reviewed Spanish copy, preserving product names, commands and English phase names.
+- `src/i18n.mjs`: build-time translation, equivalent-page links and language metadata.
 - `assets/style.css`: entry point for base, responsive and motion styles.
 - `assets/base.css`: layout and the original Aikya navy/cyan/turquoise palette.
 - `assets/responsive.css` / `assets/motion.css`: screen adaptation and accessible animation.
@@ -43,6 +52,10 @@ Content sources checked on 2026-11-23:
 - Public latest stable releases: Harness v7.2.2, Mods v0.0.10; Forge has no stable
   public release at the content check. Main-branch docs can describe newer features.
 
+Both locales share the same verified product data. Add translations for new editorial
+text to `src/es.mjs`; the build fails if Spanish copy is missing. Internal navigation
+stays within the selected language, while upstream documentation keeps its original URL.
+
 Recheck the release status before changing availability labels. Do not add
 unavailable curl commands, performance claims, usage percentages or unsupported
 integrations. Each product repository owns its technical documentation and releases.
@@ -54,7 +67,8 @@ npx playwright install chromium
 npm test
 ```
 
-Tests cover real generated links/assets, six routes, keyboard product selection,
+Tests cover real generated links/assets, twelve English/Spanish routes, equivalent-page
+language switching, translated product and motion controls, keyboard product selection,
 pause/resume, reduced motion, desktop/mobile layout, no-script access and Forge's
 source-only guidance. CI installs its own matching Chromium. To reuse an existing
 Chromium locally, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable.
