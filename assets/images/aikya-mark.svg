@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"><defs><linearGradient id="a" x1="9" y1="49" x2="49" y2="13" gradientUnits="userSpaceOnUse"><stop stop-color="#0fb3f1"/><stop offset="1" stop-color="#1fccba"/></linearGradient></defs><path d="m13 44 17-30q3-5 6 0l17 30q3 6-4 6H32M22 48l-3 6h28" stroke="url(#a)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="37" r="6" fill="#0fb3f1" stroke="#0b1f44" stroke-width="3"/><circle cx="42" cy="29" r="6" fill="#1fccba" stroke="#0b1f44" stroke-width="3"/><circle cx="51" cy="50" r="6" fill="#0fb3f1" stroke="#0b1f44" stroke-width="3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400" fill="none">
+  <defs>
+    <linearGradient id="navy" x1="30" y1="230" x2="260" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1f44"/><stop offset="1" stop-color="#124275"/></linearGradient>
+    <linearGradient id="cyan" x1="130" y1="220" x2="370" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#0fb3f1"/><stop offset="1" stop-color="#00618f"/></linearGradient>
+    <linearGradient id="turquoise" x1="170" y1="30" x2="320" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#1fccba"/><stop offset="1" stop-color="#0bbbad"/></linearGradient>
+    <linearGradient id="lower" x1="225" y1="270" x2="365" y2="385" gradientUnits="userSpaceOnUse"><stop stop-color="#005f95"/><stop offset="1" stop-color="#0fb3f1"/></linearGradient>
+  </defs>
+  <!-- Ribbon contours traced from the original Aikya mark; nodes are true circles. -->
+  <path d="m82 172 73-123c18-29 47-41 75-32 21 7 36 23 49 47l56 102-49 28-43-83c-11-20-27-26-43-15L127 197Z" fill="url(#navy)"/>
+  <path d="M155 49c31-60 105-60 138 2l42 53c-23 1-40 10-49 26l-29-56c-24-24-65-48-102-25Z" fill="url(#turquoise)"/>
+  <path d="M117 205h93c18 0 27-9 39-24l31-36c-1 25 9 43 27 55l-51 50c-13 14-28 17-49 17h-93c12-17 13-42 3-62Z" fill="url(#cyan)"/>
+  <path d="m345 179 67 126c10 18 17 34 16 51-10-31-31-48-59-50l-56-103c14-3 24-11 32-24Z" fill="#0fb3f1"/>
+  <path d="m44 263-34 56c-19 42 5 70 48 70h53c31 0 52-11 75-35l35-37c14-14 26-13 42 3l51 49c27 27 57 23 88 6-36 4-54-21-55-53l-46-33c-25-17-48-18-77-17-35-2-53 8-75 30l-25 25c-16 17-28 12-25-4l17-35c-19 0-36-9-48-25Z" fill="url(#navy)"/>
+  <path d="M175 291c38-24 69-26 102-6l59 44c-6 28 9 48 34 53-43 15-62-1-85-21l-28-25c-17-15-29-25-47-23-20 1-39 16-53 28l-36 31c17-20 35-57 54-81Z" fill="url(#lower)"/>
+  <circle cx="82" cy="222" r="38" fill="#0fb3f1"/>
+  <circle cx="330" cy="155" r="38" fill="#1fccba"/>
+  <circle cx="380" cy="328" r="38" fill="#0fb3f1"/>
+</svg>

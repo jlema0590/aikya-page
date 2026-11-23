@@ -58,3 +58,19 @@ if (visual && "IntersectionObserver" in window) {
     { threshold: 0.05 },
   ).observe(visual);
 }
+
+for (const button of document.querySelectorAll('[data-copy-command]')) {
+  button.hidden = false;
+  button.addEventListener('click', async () => {
+    const block = button.closest('.install-command');
+    const feedback = block.querySelector('[data-copy-feedback]');
+    try {
+      await navigator.clipboard.writeText(block.querySelector('code').textContent);
+      feedback.textContent = locale === 'es' ? 'Copiado' : 'Copied';
+    } catch {
+      feedback.textContent = locale === 'es'
+        ? 'Selecciona y copia el comando manualmente.'
+        : 'Select and copy the command manually.';
+    }
+  });
+}

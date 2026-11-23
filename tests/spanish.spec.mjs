@@ -3,6 +3,7 @@ const routes=['','products/harness/','products/forge/','products/mods/','guides/
 for(const route of routes){
   test('language switch retains the equivalent page: '+(route||'home'),async({page})=>{
     await page.goto(route);
+    await expect(page.locator('.language-toggle')).toHaveCount(1);
     await page.getByRole('link',{name:'Español',exact:true}).click();
     await expect(page).toHaveURL(new RegExp('/aikya-page/es/'+route+'$'));
     await expect(page.locator('html')).toHaveAttribute('lang','es');
@@ -25,7 +26,7 @@ for(const width of [320,390,768,1440]){
     expect(await page.getByRole('heading',{level:1}).evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
     await page.getByRole('link',{name:'Explorar Harness',exact:true}).click();
     await expect(page).toHaveURL(/\/es\/products\/harness\/$/);
-    await expect(page.getByRole('link',{name:'Español',exact:true})).toHaveAttribute('aria-current','page');
+    await expect(page.locator('.language-toggle')).toHaveAttribute('data-language','es');
   });
 }
 

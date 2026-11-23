@@ -109,3 +109,22 @@ export const spanish = Object.fromEntries([
 ]);
 spanish['Bring project context, provider settings, workflow controls and observed agent usage into one terminal.'] = 'Reúne el contexto del proyecto, los ajustes de proveedores, los controles del flujo y el uso observado de los agentes en una terminal.';
 spanish['Choose Flow for phase views, Usage for observed meters, or the optional BoxBot conveyor illustration.'] = 'Elige Flow para las vistas de fases, Usage para las métricas observadas o la ilustración opcional de cinta transportadora de BoxBot.';
+Object.assign(spanish, {
+  'Installation': 'Instalación',
+  'Aikya Harness installation': 'Instalación de Aikya Harness',
+  'Aikya Forge installation': 'Instalación de Aikya Forge',
+  'Aikya Mods installation': 'Instalación de Aikya Mods',
+  'macOS / Linux': 'macOS / Linux',
+  'Windows PowerShell': 'Windows PowerShell',
+  'Copy command': 'Copiar comando',
+  'Installs Harness with Flow and Usage for your user. BoxBot is optional. Open a new terminal and Claude session afterward.': 'Instala Harness con Flow y Usage para tu usuario. BoxBot es opcional. Después, abre una terminal y una sesión de Claude nuevas.',
+  'Then, inside Claude Code': 'Después, dentro de Claude Code',
+  'Use /aikya-init for a new project or /aikya-analyze for an existing repository. Choose one.': 'Usa /aikya-init para un proyecto nuevo o /aikya-analyze para un repositorio existente. Elige uno.',
+  'These commands install Flow and Usage from the published v0.0.10 release. This installer requires Git and compatible Claude Code. Skip this if Harness already installed these mods.': 'Estos comandos instalan Flow y Usage de la versión publicada v0.0.10. Este instalador requiere Git y Claude Code compatible. Omite este paso si Harness ya instaló estos mods.',
+  'Optional: add BoxBot': 'Opcional: añadir BoxBot',
+  'After Flow and Usage installation has registered the marketplace, add BoxBot if you want it. Restart Claude Code after installing mods.': 'Una vez que la instalación de Flow y Usage haya registrado el marketplace, añade BoxBot si lo deseas. Reinicia Claude Code después de instalar mods.',
+  'Native downloads are not published yet. Use this source installation with Python 3.10–3.13, Node.js 22.19.0+ and Git.': 'Las descargas nativas aún no están publicadas. Usa esta instalación desde el código fuente con Python 3.10–3.13, Node.js 22.19.0+ y Git.',
+  'Launch from the source checkout': 'Ejecuta desde el repositorio clonado',
+  'Replace the target with your project path. Provider credentials and a positive local execution budget are configured separately in Settings.': 'Sustituye el destino por la ruta de tu proyecto. Las credenciales del proveedor y un presupuesto local de ejecución positivo se configuran por separado en Settings.',
+});
+spanish['For an existing project instead'] = 'Si el proyecto ya existe';

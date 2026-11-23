@@ -294,21 +294,6 @@ h1 {
   stroke-width: 1;
   opacity: 0.5;
 }
-.inner-thread {
-  fill: none;
-  stroke: url(#thread);
-  stroke-width: 32;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.brand-joint {
-  fill: var(--cyan);
-  stroke: var(--navy);
-  stroke-width: 6;
-}
-.brand-joint.turquoise {
-  fill: var(--turquoise);
-}
 .flow-particle {
   fill: var(--cyan);
   transform-origin: 290px 220px;
@@ -978,7 +963,18 @@ h2 {
 
 /* Native links keep the equivalent page available without JavaScript. */
 .header-actions { display: flex; align-items: center; gap: 22px; }
-.language-switch { display: flex; align-items: center; gap: 4px; font-size: 12px; }
-.language-switch a { display: grid; place-items: center; min-width: 32px; min-height: 36px; border-radius: 7px; color: var(--muted); }
-.language-switch a[aria-current="page"] { color: #edf4ff; background: #173650; }
+/* A single navigation target styled as a two-state language toggle. */
+.language-toggle {
+  position: relative; display: flex; align-items: center; padding: 4px;
+  border: 1px solid var(--line); border-radius: 24px; background: var(--deep);
+  font-size: 12px; line-height: 1; isolation: isolate;
+}
+.language-toggle::before {
+  content: ""; position: absolute; z-index: -1; inset: 4px auto 4px 4px;
+  width: 34px; border-radius: 18px; background: var(--cyan);
+}
+.language-toggle[data-language="es"]::before { left: 38px; }
+.language-toggle span { display: grid; place-items: center; width: 34px; height: 28px; color: var(--muted); }
+.language-toggle[data-language="en"] span:first-child,
+.language-toggle[data-language="es"] span:last-child { color: var(--deep); font-weight: 650; }
 html[lang="es"] .hero h1 { font-size: clamp(3.2rem, 5.7vw, 5.3rem); }

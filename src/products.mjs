@@ -92,7 +92,7 @@ export const products = [
     command: "/aikya-flow status",
     repo: "https://github.com/jlema0590/aikya-mods",
     installation:
-      "https://github.com/jlema0590/aikya-mods#install-without-cloning",
+      "https://github.com/jlema0590/aikya-mods/tree/v0.0.10#install-with-one-command",
     release: "https://github.com/jlema0590/aikya-mods/releases/latest",
     requirements:
       "Claude Code with compatible native Mods support. Installer prerequisites differ by operating system; see the instructions shipped with the selected release.",

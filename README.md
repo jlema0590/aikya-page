@@ -9,7 +9,7 @@ links their canonical documentation and releases; it does not distribute install
 ## Languages
 
 The complete portal is available in [English](https://jlema0590.github.io/aikya-page/)
-and [Spanish](https://jlema0590.github.io/aikya-page/es/). The EN/ES selector opens
+and [Spanish](https://jlema0590.github.io/aikya-page/es/). The EN/ES button-like toggle opens
 the equivalent page, including without JavaScript. Language choice is explicit;
 there are no automatic redirects or external translation services.
 
@@ -31,6 +31,8 @@ Open http://127.0.0.1:4178/aikya-page/.
 - `src/products.mjs`: verified product descriptions, requirements and upstream links.
 - `src/templates.mjs`: landing page, product pages and comparison/getting-started guides.
 - `src/es.mjs`: reviewed Spanish copy, preserving product names, commands and English phase names.
+- `src/installation.mjs`: verified OS commands and shared installation panels.
+- `assets/installation.css`: scrollable command blocks and native OS disclosures.
 - `src/i18n.mjs`: build-time translation, equivalent-page links and language metadata.
 - `assets/style.css`: entry point for base, responsive and motion styles.
 - `assets/base.css`: layout and the original Aikya navy/cyan/turquoise palette.
@@ -41,7 +43,10 @@ Open http://127.0.0.1:4178/aikya-page/.
 
 The primary palette is taken from the Aikya Forge brand tokens: navy `#0b1f44`,
 cyan `#0fb3f1`, turquoise `#1fccba`, text `#edf4ff`, panel `#112139`.
-The portal's SVG connection illustration is a code-native brand interpretation;
+The standalone SVG mark is a clean vector trace based on the original
+[Aikya logo](https://github.com/jlema0590/aikya-harness/blob/main/docs/images/aikya-harness.png),
+with geometric circular nodes. Its orbital illustration uses true circles;
+
 its terminal/phase panels are explicitly illustrative, not actual execution evidence.
 
 Content sources checked on 2026-11-23:
@@ -51,6 +56,11 @@ Content sources checked on 2026-11-23:
 - [Mods README](https://github.com/jlema0590/aikya-mods#readme).
 - Public latest stable releases: Harness v7.2.2, Mods v0.0.10; Forge has no stable
   public release at the content check. Main-branch docs can describe newer features.
+
+The installation panels use published Harness Pages scripts and the pinned v0.0.10
+Mods standalone installer (Git required), with Flow/Usage selected and BoxBot optional.
+Forge retains source-only instructions. The website displays and copies these commands;
+it never executes installers. Recheck public release availability before updating them.
 
 Both locales share the same verified product data. Add translations for new editorial
 text to `src/es.mjs`; the build fails if Spanish copy is missing. Internal navigation

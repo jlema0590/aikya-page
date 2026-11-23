@@ -1,0 +1,21 @@
+.installation { min-width: 0; }
+.start-product > .installation { grid-column: 1 / -1; }
+.installation h3 { margin: 0 0 12px; font-size: 1.5rem; }
+.installation > p, .install-next > p { max-width: 72ch; color: var(--muted); }
+.install-systems { margin: 24px 0; border-block: 1px solid var(--line); }
+.install-systems details + details { border-top: 1px solid var(--line); }
+.install-systems summary { cursor: pointer; padding: 16px 0; font-weight: 550; }
+.install-systems summary::marker { color: var(--cyan); }
+.install-command { min-width: 0; max-width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--deep); overflow: hidden; }
+.install-systems .install-command { margin-bottom: 20px; }
+.install-command pre { max-width: 100%; overflow-x: auto; margin: 0; padding: 20px; color: #b5eaff; font: 400 .8125rem/1.8 ui-monospace, SFMono-Regular, Consolas, monospace; tab-size: 2; }
+.install-command code { font: inherit; white-space: pre; }
+.command-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 0 20px 12px; font-size: .8125rem; color: var(--turquoise); }
+.command-actions button { padding: 7px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--text); font-size: .8125rem; }
+.command-actions button[hidden] { display: none; }
+.install-next h4 { font-size: 1rem; margin-bottom: 8px; }
+.install-next { margin-bottom: 24px; }
+@media (max-width: 600px) {
+  .install-command pre { padding: 16px; }
+  .command-actions { padding-inline: 16px; }
+}
